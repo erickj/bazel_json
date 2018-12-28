@@ -555,7 +555,7 @@ def _reduce_array(reductions):
 
 def _reduce_object(reductions):
     obj = dict()
-    for i in range(0, len(reductions) / 2):
+    for i in range(0, len(reductions) // 2):
         idx = i * 2
         key = reductions[idx]["reduction"]
         val = reductions[idx + 1]["reduction"]
